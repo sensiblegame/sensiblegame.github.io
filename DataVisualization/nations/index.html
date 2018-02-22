@@ -217,7 +217,7 @@ var countrylabel = svg.append("text")
 var first_time = true;
 
 // Load the data.
-d3.json("../data/nations.json", function(nations) {
+d3.json("data/nations.json", function(nations) {
 
   // A bisector since many nation's data is sparsely-defined.
   var bisect = d3.bisector(function(d) { return d[0]; });
